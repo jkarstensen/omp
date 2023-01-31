@@ -7,7 +7,7 @@
 %            and keep all variables in the workspace.
 %
 %---------------------------------------------
-% CALL: sw_dist.m form CSIRO seawater package
+% CALL: gsw_distance.m from GSW toolbox www.teos-10.org
 % external variables required: ctpara tit_str A lat long press
 %
 %---------------------------------------------
@@ -15,19 +15,18 @@
 % GEOMAR
 % Helmholtz Centre for Ocean Res. Kiel  FIAMS, Flinders University
 % J. Karstensen                         Matthias Tomczak
-% Duesternbrooker Weg 20				GPO Box 2100
+% Duesternbrooker Weg 20		GPO Box 2100
 % 24106 Kiel                            Adelaide, SA
 % Germany                               Australia
 %
 % BUGS: jkarstensen@geomar.de
-%   or  matthias.tomczak@flinders.edu.au
 %--------------------------------------------
 
 % select parameter to be plotted:
 para=A(ctpara,:)*100;
 
 %calculate distance between stations
-[dist,phaseangle] = sw_dist(lat,long,'km');
+[dist,phaseangle] = gsw_distance(lat,long)/1000;
 
 if size(dist,1)>1
  dist=dist';
