@@ -21,7 +21,7 @@ h4= ['  continued from the graphical user interface by correcting the action. If
 h5= ['  correct choice is entered the status display will eventually return to'];
 h6= ['  the "waiting for input" message.'];
 h7= ['  '];
-h8= ['  BUGS: jkarstensen@geomar.de  or  matthias.tomczak@flinders.edu.au'];
+h8= ['  BUGS: jkarstensen@geomar.de'];
 ht2 = str2mat(h1,h2,h3,h4,h5,h6,h7,h8);
 
 a = figure('Color',[0.7 0.83 0.8],'MenuBar','none', ...
