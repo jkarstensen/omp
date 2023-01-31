@@ -7,12 +7,11 @@
 % GEOMAR
 % Helmholtz Centre for Ocean Res. Kiel  FIAMS, Flinders University
 % J. Karstensen                         Matthias Tomczak
-% Duesternbrooker Weg 20				GPO Box 2100
+% Duesternbrooker Weg 20		GPO Box 2100
 % 24106 Kiel                            Adelaide, SA
 % Germany                               Australia
 %
 % BUGS: jkarstensen@geomar.de
-%   or  matthias.tomczak@flinders.edu.au
 %--------------------------------------------
 %
 
