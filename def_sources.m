@@ -13,7 +13,6 @@
 % Germany                               Australia
 %
 % BUGS: jkarstensen@geomar.de
-%   or  matthias.tomczak@flinders.edu.au
 %--------------------------------------------
 %
 % OUTPUT to be used in OMP packet:
