@@ -17,7 +17,6 @@
 % Germany                               Australia
 %
 % BUGS: jkarstensen@geomar.de
-%   or  matthias.tomczak@flinders.edu.au
 %--------------------------------------------
 
 % Set type of OMP analysis by placing/deleting comment (%) sign:
