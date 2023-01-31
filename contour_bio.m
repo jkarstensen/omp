@@ -7,7 +7,6 @@
 %            and keep all variables in the workspace.
 %
 %---------------------------------------------
-% CALL: sw_dist.m form CSIRO seawater package
 % external variables required: ctpara tit_str A lat long press
 %
 %---------------------------------------------
@@ -20,7 +19,7 @@
 % Germany                               Australia
 %
 % BUGS: jkarstensen@geomar.de
-%   or  matthias.tomczak@flinders.edu.au
+% 
 %--------------------------------------------
 
 % select parameter to be plotted:
