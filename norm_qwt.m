@@ -23,7 +23,6 @@ function [G,mG,stdG]=norm_qwt(G1)
 % Germany                               Australia
 %
 % BUGS: jkarstensen@geomar.de
-%   or  matthias.tomczak@flinders.edu.au
 %--------------------------------------------
 
 [m,n]=size(G1); % number of water types
