@@ -13,18 +13,21 @@ This page is used to discuss general aspects of the OMP (Optimum Multiparameter)
 ## The default run
 The easiest way to get a feeling for OMP analysis is to start with the default run (using runomp2.m), an analysis of water masses in the tropical Indian Ocean. (See the previous section for details.) The default run is the same for all versions (automatic or interactive in both forms). Make sure that you have qwt2.m and the data files testdata.mat and testwght.mat in their original form in your Matlab path. Further things to observe are:
 
-    in automatic mode: make sure that you have the control file incontr2.m in its original form in your Matlab path. Select automatic mode; when asked for the name of the control file (the display shows incontr2) activate (select) the display field and press ENTER or RETURN without changing the name of the file.
-    in interactive (GUI) mode: Do not press the radiobutton for extended OMP analysis, keep basic OMP analysis switched on; activate (select) other entry fields as they become available but do not change any entries, just press ENTER or RETURN.
-    in interactive (listing) mode: Respond to all data entry prompts by pressing RETURN without entering data or information. 
+in automatic mode: make sure that you have the control file incontr2.m in its original form in your Matlab path. Select automatic mode; when asked for the name of the control file (the display shows incontr2) activate (select) the display field and press ENTER or RETURN without changing the name of the file.
+in interactive (GUI) mode: Do not press the radiobutton for extended OMP analysis, keep basic OMP analysis switched on; activate (select) other entry fields as they become available but do not change any entries, just press ENTER or RETURN.
+in interactive (listing) mode: Respond to all data entry prompts by pressing RETURN without entering data or information. 
 
 The default settings use basic OMP analysis with for water types representing ICW and AAMW based on potential temperature, salinity, oxygen, phosphate and nitrate. The summary at the end of the run should look like this:
 
-## P R O G R A M   R U N   S U M M A R Y :
----------------------------------------
+## Program run summary:
 Method used:   BASIC OMP ANALYSIS.
+
 Dataset used:  testdata.
+
 Upper limit of analysis:  0 dbar,
+
 Lower limit of analysis:  6000 dbar.
+
 Parameters used:
   potential temperature
   salinity
