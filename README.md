@@ -41,14 +41,14 @@ Weights used (variables as listed):
     24
 
   
-Water types used:
+##Water types used:
   
  AAMW
  AAMW
   ICW
   ICW
   
-Water type definitions for the selected variables and mass conservation
+##Water type definitions for the selected variables and mass conservation
   
    10.0000   16.4000    9.0000   18.0000
    34.5600   34.5500   34.6500   35.8000
@@ -67,13 +67,13 @@ You may want to verify at this stage how this selection corresponds to the setti
 
 Pressing any key produces the figure at the left below. There is clearly a range where your analysis performs well, producing very small mass residuals; but over much of the range at the top and at the bottom the result is hopelessly bad. The reason is, of course, that you included only water masses of the permanent thermocline in the analysis but analysed data from the ocean surface to 6000 m depth. If you are only analysing for AAMW and ICW contributions you should restrict your analysis to the permanent thermocline.
 
-Setting the correct depth/density range
+##Setting the correct depth/density range
 
 Let us then run the analysis again, with the same data but restricting the depth range to 300 - 600 m (300 - 600 dbar). This is easily achieved in interactive mode; for automatic mode you have to edit incontr2.m before running the analysis again.
 
 The result of the second run is shown in the right figure above. Note the different scales; most of your data points now give a mass residual of about 2%, and all results are well within 10%. A result such as this gives enough encouragement to check out the water mass fractions; they are shown below. The stations of this section were occupied from east to west, so east is on the left of the figures, which shows the largest contribution from the Indonesian Throughflow (AAMW).
 
-Improving the water mass selection
+##Improving the water mass selection
 Cutting the depth range back to 300 - 600 dbar eliminates data points with unacceptably large mass conservation residuals but does not otherwise improve the result; the residuals shown in the figure on the right are the same as in the figure on the left in the same potential density range.
 
 It is always worth checking the quality of your water type definitions. To demonstrate the effect of changing the water type definitions we now run the analysis again, restricted as before to the 300 - 600 dbar range, with slightly different water type definitions for ICW. The default set qwt2.m contains a second set of ICW water type definitions for this purpose.
@@ -97,7 +97,7 @@ As we can see, we now have an excellent fit in the potential density range 25.5 
 
 The result shows ICW dominating the permanent thermocline in the west, AAMW in the east and AAIW uniformly distributed along the section with its largest contribution below the 800 dbar level, falling off to zero at about the 500 dbar. Above 200 dbar the results are unreliable and show unrealistic distributions.
 
-Changing the weights
+##Changing the weights
 
 Reducing the mass residuals is of course also possible by simply changing the weight for mass conservation. The above examples were all derived with a mass conservation weight equal to the weight calculated for temperature (which usually has the largest weight). Conservation of mass is a concept and not a variable open to observation, so it is impossible to derive a mass conservation weight by calculation.
 
@@ -107,7 +107,7 @@ The choice is essentially a personal one. We restrict ourselves here to pointing
 
 The left run is the default but restricted to 300 - 600 dbar, the right run is the same but with the mass conservation weight increased by a factor of 5. The weight used were [24 24 7 2 2 24] for the run on the left and [24 24 7 2 2 120] for the run on the right. Note the difference in scales.
 
-Including potential vorticity
+##Including potential vorticity
 
 There are many other aspects to OMP analysis which will only become apparent in practical applications. Generally, no OMP analysis should be performed without a detailed study of the distribution of residuals of individual parameters. A quick check is possible through the command plot(err(n,:),pdens), which produces the well known graphs of the mass residual against potential density for n = m (m = number of observed properties + 1). Other choices of n will produce equivalent graphs for potential temperature, salinity, oxygen etc. (The actual value of n for each property depends on the choice of observed properties for the program run.) A more detailed analysis would plot sections of property residuals in space. Regions with particularly large residuals in such a section plot can indicate problems with water type definitions.
 
