@@ -19,7 +19,7 @@ The easiest way to get a feeling for OMP analysis is to start with the default r
 
 The default settings use basic OMP analysis with for water types representing ICW and AAMW based on potential temperature, salinity, oxygen, phosphate and nitrate. The summary at the end of the run should look like this:
 
-P R O G R A M   R U N   S U M M A R Y :
+## P R O G R A M   R U N   S U M M A R Y :
 ---------------------------------------
 Method used:   BASIC OMP ANALYSIS.
 Dataset used:  testdata.
